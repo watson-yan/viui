@@ -1,0 +1,37 @@
+{
+  "name": "viui",
+  "version": "1.0.0",
+  "description": "A UI framewwork based on Vue2.x",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watson-yan/viui.git"
+  },
+  "keywords": [
+    "vue",
+    "metroui",
+    "components"
+  ],
+  "author": "watson yan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watson-yan/viui/issues"
+  },
+  "homepage": "https://github.com/watson-yan/viui#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "css-loader": "^0.28.4",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.18.2",
+    "vue-loader": "^11.3.4",
+    "vue-style-loader": "^2.0.5",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.6.1"
+  }
+}
