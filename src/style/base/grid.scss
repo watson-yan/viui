@@ -1,0 +1,36 @@
+@for $i from 1 to 13 {
+  .flex-grid .row .cell.colspan#{$i} {
+    -webkit-flex: 0 0 #{$i * 8.33%};
+    flex: 0 0 #{$i * 8.33%};
+  }
+}
+
+
+.flex-grid {
+  .row {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    .cell {
+      -webkit-flex: 0 0 8.33333333%;
+      flex: 0 0 8.33333333%;
+    }
+    &.flex-just-center {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+    &.flex-just-end {
+      -webkit-justify-content: flex-end;
+      justify-content: flex-end;
+    }
+     &.flex-just-sa {
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+    }
+     &.flex-just-sb {
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+    }
+  }
+}

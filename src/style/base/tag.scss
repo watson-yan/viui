@@ -1,0 +1,30 @@
+.tag {
+  display: inline-block;
+  line-height: 1.1;
+  font-size: 80%;
+  padding: 1px 4px 2px;
+  background-color: #eeeeee;
+  border-radius: 2px;
+  color: #1d1d1d;
+  vertical-align: middle;
+  &.success {
+  background-color: #60a917;
+  color: #ffffff;
+  }
+  &.alert {
+    background-color: #ce352c;
+    color: #ffffff;
+  }
+  &.info {
+    background-color: #1ba1e2;
+    color: #ffffff;
+  }
+  &.warning {
+    background-color: #fa6800;
+    color: #ffffff;
+  }
+}
+a.tag {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -1,0 +1,118 @@
+/**
+* Background
+*/
+@mixin bg($color) {
+  background: $color !important;
+}
+
+.bg-black {@include bg(black)}
+.bg-white {@include bg(white)}
+.bg-lime {@include bg(#a4c400)}
+.bg-green {@include bg(#60a917)}
+.bg-emerald{@include bg(#008a00)}
+.bg-teal{@include bg(#00aba9)}
+.bg-blue{@include bg(#00aff0)}
+.bg-cyan{@include bg(#1ba1e2)}
+.bg-cobalt{@include bg(#0050ef)}
+.bg-indigo{@include bg(#6a00ff)}
+.bg-violet{@include bg(#aa00ff)}
+.bg-pink{@include bg(#dc4fad)}
+.bg-magenta{@include bg(#d80073)}
+.bg-crimson{@include bg(#a20025)}
+.bg-red{@include bg(#ce352c)}
+.bg-orange{@include bg(#fa6800)}
+.bg-amber{@include bg(#f0a30a)}
+.bg-yellow{@include bg(#e3c800)}
+.bg-brown{@include bg(#825a2c)}
+.bg-olive{@include bg(#6d8764)}
+.bg-steel{@include bg(#647687)}
+.bg-mauve{@include bg(#76608a)}
+.bg-taupe{@include bg(#87794e)}
+.bg-gray{@include bg(#555555 )}
+.bg-dark{@include bg(#1d1d1d)}
+.bg-darker{@include bg(#222222)}
+.bg-darkBrown{@include bg(#63362f)}
+.bg-darkCrimson{@include bg(#640024)}
+.bg-darkMagenta{@include bg(#81003c)}
+.bg-darkIndigo{@include bg(#4b0096)}
+.bg-darkCyan{@include bg(#1b6eae)}
+.bg-darkCobalt{@include bg(#00356a)}
+.bg-darkTeal{@include bg(#004050)}
+.bg-darkEmerald{@include bg(#003e00)}
+.bg-darkGreen{@include bg(#128023)}
+.bg-darkOrange{@include bg(#bf5a15)}
+.bg-darkRed{@include bg(#9a1616)}
+.bg-darkPink{@include bg(#9a165a)}
+.bg-darkViolet{@include bg(#57169a)}
+.bg-darkBlue{@include bg(#16499a)}
+.bg-lightBlue{@include bg(#4390df)}
+.bg-lightRed{@include bg(#da5a53)}
+.bg-lightGreen{@include bg(#7ad61d)}
+.bg-lighterBlue{@include bg(#00ccff)}
+.bg-lightTeal{@include bg(#45fffd)}
+.bg-lightOlive{@include bg(#78aa1c)}
+.bg-lightOrange{@include bg(#ffc194)}
+.bg-lightPink{@include bg(#f472d0)}
+.bg-grayDark{@include bg(#333333)}
+.bg-grayDarker{@include bg(#222222)}
+.bg-grayLight{@include bg(#999999)}
+.bg-grayLighter{@include bg(#eeeeee)}
+
+/*
+* FontColor
+*/
+@mixin fg($color) {
+  color: $color !important;
+}
+.fg-white {@include fg(white)}
+.fg-white {@include fg(white)}
+.fg-lime {@include fg(#a4c400)}
+.fg-green {@include fg(#60a917)}
+.fg-emerald{@include fg(#008a00)}
+.fg-teal{@include fg(#00aba9)}
+.fg-blue{@include fg(#00aff0)}
+.fg-cyan{@include fg(#1ba1e2)}
+.fg-cobalt{@include fg(#0050ef)}
+.fg-indigo{@include fg(#6a00ff)}
+.fg-violet{@include fg(#aa00ff)}
+.fg-pink{@include fg(#dc4fad)}
+.fg-magenta{@include fg(#d80073)}
+.fg-crimson{@include fg(#a20025)}
+.fg-red{@include fg(#ce352c)}
+.fg-orange{@include fg(#fa6800)}
+.fg-amber{@include fg(#f0a30a)}
+.fg-yellow{@include fg(#e3c800)}
+.fg-brown{@include fg(#825a2c)}
+.fg-olive{@include fg(#6d8764)}
+.fg-steel{@include fg(#647687)}
+.fg-mauve{@include fg(#76608a)}
+.fg-taupe{@include fg(#87794e)}
+.fg-gray{@include fg(#555555 )}
+.fg-dark{@include fg(#1d1d1d)}
+.fg-darker{@include fg(#222222)}
+.fg-darkBrown{@include fg(#63362f)}
+.fg-darkCrimson{@include fg(#640024)}
+.fg-darkMagenta{@include fg(#81003c)}
+.fg-darkIndigo{@include fg(#4b0096)}
+.fg-darkCyan{@include fg(#1b6eae)}
+.fg-darkCobalt{@include fg(#00356a)}
+.fg-darkTeal{@include fg(#004050)}
+.fg-darkEmerald{@include fg(#003e00)}
+.fg-darkGreen{@include fg(#128023)}
+.fg-darkOrange{@include fg(#bf5a15)}
+.fg-darkRed{@include fg(#9a1616)}
+.fg-darkPink{@include fg(#9a165a)}
+.fg-darkViolet{@include fg(#57169a)}
+.fg-darkBlue{@include fg(#16499a)}
+.fg-lightBlue{@include fg(#4390df)}
+.fg-lightRed{@include fg(#da5a53)}
+.fg-lightGreen{@include fg(#7ad61d)}
+.fg-lighterBlue{@include fg(#00ccff)}
+.fg-lightTeal{@include fg(#45fffd)}
+.fg-lightOlive{@include fg(#78aa1c)}
+.fg-lightOrange{@include fg(#ffc194)}
+.fg-lightPink{@include fg(#f472d0)}
+.fg-grayDark{@include fg(#333333)}
+.fg-grayDarker{@include fg(#222222)}
+.fg-grayLight{@include fg(#999999)}
+.fg-grayLighter{@include fg(#eeeeee)}

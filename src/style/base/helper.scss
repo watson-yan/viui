@@ -1,0 +1,129 @@
+/** 
+* margin
+*/
+@for $i from 1 to 11 {
+  .margin#{$i * 5} {
+    margin: #{$i * 5}px;
+  }
+}
+.no-margin {
+  margin: 0;
+}
+.no-margin-top {
+  margin-top: 0
+}
+.no-margin-right {
+  margin-right: 0
+}
+.no-margin-bottom {
+  margin-bottom: 0
+}
+.no-margin-left {
+  margin-left: 0
+}
+
+/*
+* padding
+*/
+@for $i from 1 to 11 {
+  .padding#{$i * 5} {
+    padding: #{$i * 5}px;
+  }
+}
+.no-padding {
+  padding: 0;
+}
+.no-padding-top {
+  padding-top: 0
+}
+.no-padding-left {
+  padding-left: 0
+}
+.no-padding-bottom {
+  padding-bottom: 0
+}
+.no-padding-right {
+  padding-right: 0
+}
+
+
+/** 
+* float
+*/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+/** 
+* text
+*/
+.align-right {
+  text-align: right;;
+}
+.align-center {
+  text-align: center;
+}
+
+
+/** 
+* margin
+*/
+
+
+/** 
+* shadows
+*/
+.shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
+.block-shadow {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+.bottom-shadow {
+  box-shadow: -1px 6px 6px -6px rgba(0, 0, 0, 0.35);
+}
+.text-shadow {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/**
+* list
+*/
+.unstyled-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+
+/*
+* text
+*/
+.text-ellipsis {
+  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@for $i from 1 to 6 {
+  .line-clamp#{$i} {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: #{$i};
+    -webkit-box-orient: vertical;
+  }
+}

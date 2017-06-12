@@ -1,0 +1,164 @@
+// default
+@mixin btnColor($bgColor1, $bgColor2, $fgColor:#fff) {
+    color: $fgColor;
+    background: $bgColor1;
+    border-color: $bgColor1;
+    &:active {
+      background: $bgColor2;
+    }
+}
+
+@mixin outline($fgColor, $active, $bgColor: #fff) {
+  color: $fgColor;
+  background: $bgColor;
+  border-color: $fgColor;
+  &:active {
+    color: $active;
+    border-color: $active;
+  }
+}
+
+.button,.square-button, .cycle-button{
+  display: inline-block;
+  position: relative;
+  padding: 0 1rem;
+  line-height: 2.125rem;
+  font-size: 1rem;
+  vertical-align: middle;
+  background-color: #fff;
+  color: #262626;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  &:hover {
+    border-color: #787878;
+  }
+  &:active {
+    background: #eeeeee;
+    color: #262626;
+    box-shadow: none;
+  }
+  &:focus {
+    outline: 0;
+  }
+  &:disabled {
+    background-color: #eaeaea;
+    color: #bebebe;
+    cursor: not-allowed;
+    border-color: transparent;
+  }
+
+  /*
+  * sizes: mini/small/large
+  */
+  &.mini {
+    font-size: .6rem;
+    padding: .2rem .625rem;
+    height: 1.4rem;
+    line-height: 1.4rem;
+  }
+  &.small {
+    font-size: .7rem;
+    padding: 0 .75rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+  }
+  &.large {
+    padding: 0 2rem;
+    height: 2.55rem;
+    font-size: 1.25rem;
+    line-height: 2.55rem;
+  }
+
+  // background-color
+  &.primary {
+    @include btnColor(#2086bf, #1b6eae);
+    &.outline {
+      @include outline(#2086bf, #1b6eae);
+    }
+  }
+  &.success {
+    @include btnColor(#60a917, #128023);
+    &.outline {
+      @include outline(#60a917, #128023);
+    }
+  }
+  &.info {
+    @include btnColor(#59cde2, #1ba1e2);
+    &.outline {
+      @include outline(#59cde2, #1ba1e2);
+    }
+  }
+  &.danger {
+    @include btnColor(#ce352c, #9a1616);
+    &.outline {
+      @include outline(#ce352c, #9a1616);
+    }
+  }
+  &.warning {
+    @include btnColor(#fa6800, #bf5a15);
+    &.outline {
+      @include outline(#fa6800, #bf5a15);
+    }
+  }
+  &.link {
+    @include btnColor(transparent, transparent, #114968);
+    &:active {
+      color: #114968;
+    }
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+/**
+*  Shape:  square/cycle
+*/
+ .square-button, .cycle-button {
+  padding: 0;
+  width: 2.125rem;
+  height: 2.125rem;
+  text-align: center;
+  overflow: hidden;
+  &.mini {
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: .6rem;
+    padding: 0;
+    min-width: 0;
+  }
+  &.small {
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: .7rem;
+    padding: 0;
+    min-width: 0;
+  }
+  &.large {
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    width: 2.55rem;
+    height: 2.55rem;
+  }
+}
+
+.cycle-button {
+  border-radius: 100%;
+}
+
+.btn-group {
+  font-size: 0;
+  .button,.square-button {
+    &:hover {
+      &+.button, &+.square-button {
+        margin-left: 0px;
+        border-left: none;
+      }
+    }
+    &+.button, &+.square-button {
+      margin-left: -1px;
+    }
+  }
+}
