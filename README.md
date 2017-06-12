@@ -1,5 +1,7 @@
 # VIUI
-<img src="https://travis-ci.org/watson-yan/viui.svg?branch=master" width="90" height="20">
+<a href="https://travis-ci.org/watson-yan/viui" target="_blank">
+  <img src="https://travis-ci.org/watson-yan/viui.svg?branch=master" width="90" height="20">
+</a>
 
 #### Metro UI style Toolkit build on Vue.js 2.X
 
