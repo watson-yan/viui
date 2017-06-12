@@ -1,8 +1,12 @@
 var path = require('path')
 var webpack = require('webpack')
 
+function resolve (dir) {
+  return path.join(__dirname, '..', dir)
+}
+
 const config = {
-  entry: __dirname + '/index.js',
+  entry: __dirname + '/src/index.js',
   output: {
     path: __dirname+'/dist',
     filename: 'bundle.js'
@@ -11,13 +15,12 @@ const config = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
-        options: vueLoaderConfig
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src')]
+        exclude: /node_modules/
       },
       {  
         test: /\.(css|scss)$/,  
