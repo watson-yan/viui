@@ -20,6 +20,11 @@ Vue.use(Viui)
 ### Browswer Support
 Modern browsers and Internet Explorer 9+.
 
+### Dependencies
+* [Vue.js 2.x](https://vuejs.org/)
+
+### Metro UI
+[Windows Metro UI](https://metroui.org.ua/)
 
 ### LICENSE
 MIT
