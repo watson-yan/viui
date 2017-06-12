@@ -1,4 +1,5 @@
 # VIUI
+<img src="https://travis-ci.org/watson-yan/viui.svg?branch=master" width="90" height="20">
 
 #### Metro UI style Toolkit build on Vue.js 2.X
 
