@@ -12,6 +12,10 @@
 ### DOCS
 [中文文档](https://huayan.site/ViUI)
 
+### [Demo](https://huayan.site/ViUI)
+![demo1.jpeg](http://upload-images.jianshu.io/upload_images/3778813-420a4b99900d0b06.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ### Quick Start
 ```javascript
 import Vue from 'vue'
